@@ -1,5 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Node template
 # Logs
 logs
 *.log
@@ -59,6 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
@@ -86,3 +85,7 @@ sw.*
 
 # Mac OSX
 .DS_Store
+=======
+# next.js build output
+.next
+>>>>>>> 3fde4e7b53a0e0165f31c8c751cde7031931200f
