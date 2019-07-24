@@ -7,7 +7,7 @@ fs.readFile('sample.txt', 'utf8', function(err, body){
     const modBody = body.replace(/\n/g, " ");
     const cutContent = wordcut.cut(modBody);
     const cutContentList = cutContent.split('|');
-    const limit = 90;
+    const limit = 100;
     const lenCutList = cutContentList.length;
     let curCount = 0;
     let line = '';
@@ -43,6 +43,11 @@ fs.readFile('sample.txt', 'utf8', function(err, body){
 
     console.log(page);
     fs.writeFile('result.txt', strPage, (err) => {
+        if (err) console.log(err);
+        console.log("Content was Wrote");
+    })
+
+    fs.writeFile('cutResult.txt', cutContent, (err) => {
         if (err) console.log(err);
         console.log("Content was Wrote");
     })
