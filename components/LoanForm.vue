@@ -21,12 +21,6 @@ export default {
       }
     };
   },
-  methods: {
-    onSubmit(e) {
-      e.preventDefault();
-      console.log(JSON.stringify(this.form));
-    }
-  }
 };
 </script>
 
