@@ -1,12 +1,24 @@
 <template>
   <div class="container">
-    <LoanForm />
+    <h1>Flexi-Form</h1>
+      <div>
+        <b-tabs content-class="mt-3" justified>
+          <b-tab title="Justify Text" active>
+            <LoanForm />
+          </b-tab>
+          <b-tab title="Fill-In">
+            <BlankForm />
+          </b-tab>
+          <b-tab title="Disabled" disabled><p>I'm a disabled tab!</p></b-tab>
+        </b-tabs>
+      </div>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import LoanForm from '~/components/LoanForm.vue'
+import BlankForm from '~/components/BlankForm.vue'
 
 export default {
   asyncData(context) {
@@ -17,6 +29,7 @@ export default {
   components: {
     Logo,
     LoanForm,
+    BlankForm
   },
 }
 </script>
@@ -24,7 +37,7 @@ export default {
 <style>
 .container {
   font-family: 'Sarabun', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
   background: white;
   width: 21cm;
