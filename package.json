@@ -16,7 +16,7 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "nuxt": "^2.0.0",
     "read-excel-file": "^4.0.2",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",
